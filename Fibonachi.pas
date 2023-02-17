@@ -8,13 +8,18 @@ begin
     until n >= 0;
     a := 0;
     b := 1;
-    write(a, ' ', b, ' ');
-    for i := 3 to n do
+    if n <= 1 then
+        writeln('0')
+    else
         begin
-            write(a + b, ' ');
-            c := b;
-            b := a + b;
-            a := c;
+            write(a, ' ', b, ' ');
+            for i := 3 to n do
+                begin
+                    write(a + b, ' ');
+                    c := b;
+                    b := a + b;
+                    a := c
+                end;
+                writeln
         end;
-    writeln;
 end.
