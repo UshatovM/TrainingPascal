@@ -1,4 +1,4 @@
-program fibonachi;
+program fibonacci;
 var
     a, b, c, i: longint;
     n: integer;
